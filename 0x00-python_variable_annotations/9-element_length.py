@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
-''' a type-annotated function make_multiplier that takes
-a float multiplier as argument and returns
-a function that multiplies a float by multiplier.
-'''
-from typing import Callable
+""" type-annotated function
+"""
+from typing import Iterable, List, Tuple, Sequence
 
 
-def make_multiplier(multiplier: float) -> Callable[[float], float]:
-    ''' Returns a function that multiplies a float by multiplier. '''
-    def multiply(n: float) -> float:
-        return n * multiplier
-    return multiply
+def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
+    """ Annotate the below function’s parameters and
+    return values with the appropriate types
+    """
+    return [(i, len(i)) for i in lst]
