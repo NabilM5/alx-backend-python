@@ -1,14 +1,7 @@
 #!/usr/bin/env python3
-<<<<<<< HEAD
-'''
- a new function task_wait_n. The code
-=======
-''' 
-a new function task_wait_n. The code
->>>>>>> b392e62640fc054d27c5df1cf2e45a0474d074ce
+''' a new function task_wait_n. The code
 is nearly identical to wait_n
 except task_wait_random is being called.
-
 '''
 import asyncio
 from typing import List
